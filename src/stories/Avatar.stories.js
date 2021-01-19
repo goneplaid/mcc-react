@@ -2,12 +2,14 @@ import React from 'react';
 
 import Avatar from '../Avatar';
 
-export default {
+const story = {
   title: 'Example/Avatar',
   component: Avatar,
 };
 
 const Template = (args) => <Avatar {...args} />;
+
+export default story;
 
 export const Small = Template.bind({});
 Small.args = {

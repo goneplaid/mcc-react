@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Avatar = (props) => {
+const Avatar = ({ size, url }) => {
   const dimensions = {
     enormous: 'w-56 h-56',
-    large: 'w-20 h-20',
+    large: 'w-16 h-16',
     medium: 'w-12 h-12',
-    small: 'w-4 h-4',
+    small: 'w-8 h-8',
   };
 
   return (
     <div
       className={
-        `bg-cover avatar ${dimensions[props.size]} rounded-full`
+        `bg-cover avatar ${dimensions[size]} rounded-full`
       }
       style={{
-        backgroundImage: `url(${props.url})`
+        backgroundImage: `url(${url})`
       }}
     >
     </div>
@@ -23,8 +23,11 @@ const Avatar = (props) => {
 }
 
 Avatar.propTypes = {
+  // What size of a button do you want?
   size: PropTypes.oneOf(['enormous', 'large', 'medium', 'small']),
-  url: PropTypes.string,
+
+  // Give us a URL to the underlying image for this avatar
+  url: PropTypes.string.isRequired,
 };
 
 Avatar.defaultProps = {
