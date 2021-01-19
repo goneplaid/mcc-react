@@ -1,0 +1,21 @@
+
+.avatar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.avatar--small {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.avatar--medium {
+  width: 5rem;
+  height: 5rem;
+}
+
+.avatar--large {
+  width: 10rem;
+  height: 10rem;
+}
