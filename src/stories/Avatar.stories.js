@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Avatar from '../App/Avatar';
+import Avatar from '../Avatar';
 
 export default {
   title: 'Example/Avatar',
@@ -22,4 +22,9 @@ Medium.args = {
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
+};
+
+export const Enormous = Template.bind({});
+Enormous.args = {
+  size: 'enormous',
 };
