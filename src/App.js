@@ -1,11 +1,11 @@
 import './App.css';
-import Avatar from './App/Avatar';
+import Avatar from './Avatar';
 
 function App() {
   return (
     <div className="App">
       <Avatar
-        size="small"
+        size="medium"
         url="http://localhost:7000/assets/images/judges/joe_bastianich.png"
       />
     </div>

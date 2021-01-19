@@ -1,3 +1,9 @@
+# Work in progress
+
+This is a new React app (and my first), so I'm just tinkering around at the moment.
+
+So far the stack includes Tailwind and Storybook for developing components. I've added some Redux deps that I'm going to use with Redux Bee's for connecting a JSON:API to.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
