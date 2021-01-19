@@ -15,12 +15,13 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run watch:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +48,9 @@
     "@storybook/node-logger": "^6.1.14",
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/react": "^6.1.14",
-    "redux-devtools": "^3.7.0"
+    "autoprefixer": "9.8.6",
+    "postcss-cli": "7.1.0",
+    "redux-devtools": "^3.7.0",
+    "tailwindcss": "1.1.2"
   }
 }

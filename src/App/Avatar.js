@@ -6,7 +6,7 @@ const Avatar = (props) => {
   return (
     <div
       className={
-        `avatar avatar--${props.size}`
+        `mt-10 avatar avatar--${props.size}`
       }
       style={{
         backgroundImage: `url(${props.url})`
