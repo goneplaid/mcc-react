@@ -12,7 +12,7 @@ const Template = (args) => <Card {...args}>
     <br />
     Some fancy text!
     <br />
-    🧐
+    <span className="text-4xl">🧐</span>
   </div>
 </Card>;
 
