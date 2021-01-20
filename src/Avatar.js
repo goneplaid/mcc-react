@@ -1,7 +1,6 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
-const Avatar = ({ size, url }) => {
+const Avatar = ({ size, url, className }) => {
   const dimensions = {
     enormous: 'w-56 h-56',
     large: 'w-16 h-16',
@@ -12,7 +11,7 @@ const Avatar = ({ size, url }) => {
   return (
     <div
       className={
-        `bg-cover avatar ${dimensions[size]} rounded-full`
+        `bg-cover avatar ${dimensions[size]} rounded-full ${className}`
       }
       style={{
         backgroundImage: `url(${url})`

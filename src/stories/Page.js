@@ -5,7 +5,7 @@ import { Header } from './Header';
 import './page.css';
 
 export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <article>
+  <article className="page">
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 
     <section>

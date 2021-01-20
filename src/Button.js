@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/**
- * Primary UI component for user interaction
- */
 const Button = ({ primary, backgroundColor, label, ...props }) => {
   const mode = primary ?
     'bg-teal-400 text-white hover:border-teal-500' :
