@@ -1,5 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import clsx from 'clsx';
 
 const Button = ({ primary, backgroundColor, label, ...props }) => {
   const mode = primary ?
@@ -9,9 +9,12 @@ const Button = ({ primary, backgroundColor, label, ...props }) => {
   return (
     <button
       type="button"
-      className={
-        `px-2 py-1 font-semibold text-md rounded border-4 border-transparent shadow ${mode}`
-      }
+      className={clsx(
+        mode,
+        'px-2 py-1 shadow',
+        'font-semibold text-md',
+        'rounded border-4 border-transparent'
+      )}
       {...props}
     >
       {label}
