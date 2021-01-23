@@ -4,9 +4,9 @@ import SeasonCardHeader from './SeasonCardHeader';
 import SeasonCardBody from './SeasonCardBody';
 import SeasonCardFooter from './SeasonCardFooter';
 
-const SeasonCard = ({ header, body, footer }) => {
+const SeasonCard = ({ header, body, footer, onClick }) => {
   return (
-    <Card>
+    <Card {... (onClick && { onClick })} >
       <SeasonCardHeader
         seasonName={header.seasonName}
         episodeCount={header.episodeCount}
@@ -20,7 +20,7 @@ const SeasonCard = ({ header, body, footer }) => {
       >
         {footer.children}
       </SeasonCardFooter>
-    </Card>
+    </Card >
   );
 };
 

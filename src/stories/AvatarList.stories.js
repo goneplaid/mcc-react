@@ -1,3 +1,4 @@
+import config from '../app.config.json';
 import AvatarList from '../AvatarList';
 import Avatar from '../Avatar';
 
@@ -16,19 +17,19 @@ Example.args = {
     <Avatar
       className="mr-2"
       size="small"
-      url="http://localhost:7000/assets/images/judges/graham_elliot.png"
+      url={`${config.API_URL}/assets/images/judges/graham_elliot.png`}
     />
   ), (
     <Avatar
       className="mr-2"
       size="small"
-      url="http://localhost:7000/assets/images/judges/joe_bastianich.png"
+      url={`${config.API_URL}/assets/images/judges/joe_bastianich.png`}
     />
   ), (
     <Avatar
       className="mr-2"
       size="small"
-      url="http://localhost:7000/assets/images/judges/gordon_ramsay.png"
+      url={`${config.API_URL}/assets/images/judges/gordon_ramsay.png`}
     />
   )]
 };
