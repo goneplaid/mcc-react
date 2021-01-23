@@ -17,4 +17,16 @@ const Template = (args) => <Card {...args}>
 </Card>;
 
 export default story;
-export const Main = Template.bind({});
+
+export const Static = Template.bind({});
+Static.args = {
+  onClick: null,
+}
+
+export const Interactive = Template.bind({});
+Interactive.args = {
+  onClick: function () {
+    alert('Oh hai there');
+  }
+};
+

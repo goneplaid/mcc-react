@@ -1,13 +1,30 @@
-import React from 'react';
+import PropTypes from 'prop-types';
+import clsx from 'clsx';
 
-const Card = (props) => {
+const Card = ({ onClick, children }) => {
+  const classNames = clsx(
+    'overflow-hidden bg-white shadow',
+    'border-4 border-transparent rounded', {
+    'cursor-pointer hover:border-teal-400': onClick,
+  });
+
   return (
     <div
-      className="rounded overflow-hidden border-4 border-transparent bg-white cursor-pointer shadow hover:border-teal-400"
+      {...(onClick && { onClick })}
+      className={classNames}
     >
-      {props.children}
+      {children}
     </div>
   );
+};
+
+Card.propTypes = {
+  // Optional click handler
+  onClick: PropTypes.func,
+};
+
+Card.defaultProps = {
+  onClick: undefined,
 };
 
 export default Card;
