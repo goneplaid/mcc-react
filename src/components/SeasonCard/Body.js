@@ -1,7 +1,7 @@
 import React from 'react';
-import Avatar from './Avatar';
+import Avatar from '../Avatar';
 
-const SeasonCardBody = ({ avatarUrl, contestantName }) => {
+const Body = ({ avatarUrl, contestantName }) => {
   return (
     <section className="p-4 border-b border-grey-light flex flex-col items-center">
       <Avatar
@@ -19,4 +19,4 @@ const SeasonCardBody = ({ avatarUrl, contestantName }) => {
   );
 };
 
-export default SeasonCardBody;
+export default Body;

@@ -1,8 +1,8 @@
 import React from 'react';
 import SeasonCard from '../components/SeasonCard';
-import SeasonCardHeader from '../components/SeasonCardHeader';
-import SeasonCardBody from '../components/SeasonCardBody';
-import SeasonCardFooter from '../components/SeasonCardFooter';
+import SeasonCardHeader from '../components/SeasonCard/Header';
+import SeasonCardBody from '../components/SeasonCard/Body';
+import SeasonCardFooter from '../components/SeasonCard/Footer';
 import Avatar from '../components/Avatar';
 
 const story = {

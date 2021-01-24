@@ -1,7 +1,7 @@
 import React from 'react';
-import AvatarList from './AvatarList';
+import AvatarList from '../AvatarList';
 
-const SeasonCardFooter = ({ heading, children }) => {
+const Footer = ({ heading, children }) => {
   return (
     <section className="p-4">
       <AvatarList
@@ -13,4 +13,4 @@ const SeasonCardFooter = ({ heading, children }) => {
   );
 };
 
-export default SeasonCardFooter;
+export default Footer;

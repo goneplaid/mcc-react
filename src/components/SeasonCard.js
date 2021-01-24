@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from './Card';
-import SeasonCardHeader from './SeasonCardHeader';
-import SeasonCardBody from './SeasonCardBody';
-import SeasonCardFooter from './SeasonCardFooter';
+import SeasonCardHeader from './SeasonCard/Header';
+import SeasonCardBody from './SeasonCard/Body';
+import SeasonCardFooter from './SeasonCard/Footer';
 
 const SeasonCard = ({ header, body, footer, onClick }) => {
   return (
