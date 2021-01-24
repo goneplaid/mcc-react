@@ -23,10 +23,10 @@ Static.args = {
   onClick: null,
 }
 
-export const Interactive = Template.bind({});
-Interactive.args = {
+export const Clickable = Template.bind({});
+Clickable.args = {
   onClick: function () {
-    alert('Oh hai there');
+    alert('Howdy!');
   }
 };
 

@@ -53,11 +53,19 @@ const footerArgs = {
   )]
 };
 
-export const Card = CardTemplate.bind({});
-Card.args = {
+export const Static = CardTemplate.bind({});
+Static.args = {
   header: headerArgs,
   body: bodyArgs,
   footer: footerArgs,
+};
+
+export const Clickable = CardTemplate.bind({});
+Clickable.args = {
+  header: headerArgs,
+  body: bodyArgs,
+  footer: footerArgs,
+  onClick: function () { alert('howdy there, neighbor!') },
 };
 
 const HeaderTemplate = (args) => {
