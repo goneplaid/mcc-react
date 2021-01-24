@@ -32,37 +32,37 @@ const seasons = [
   {
     seasonName: 'Season 1',
     episodeCount: 13,
-    winner: 'Whitney Miller',
+    contestantName: 'Whitney Miller',
     avatar: `${avatarBaseUrl}contestants/season_1/Whitney_Miller.jpg`,
   },
   {
     seasonName: 'Season 2',
     episodeCount: 20,
-    winner: 'Jennifer Behm',
+    contestantName: 'Jennifer Behm',
     avatar: `${avatarBaseUrl}contestants/season_2/jennifer_behm.jpg`,
   },
   {
     seasonName: 'Season 3',
     episodeCount: 20,
-    winner: 'Christine Hà',
+    contestantName: 'Christine Hà',
     avatar: `${avatarBaseUrl}contestants/season_3/christine_hà.jpg`,
   },
   {
     seasonName: 'Season 4',
     episodeCount: 25,
-    winner: 'Luca Manfè',
+    contestantName: 'Luca Manfè',
     avatar: `${avatarBaseUrl}contestants/season_4/luca_manfè.jpg`,
   },
   {
     seasonName: 'Season 5',
     episodeCount: 19,
-    winner: 'courtney_lapresi',
+    contestantName: 'Courtney Lapresi',
     avatar: `${avatarBaseUrl}contestants/season_5/courtney_lapresi.jpg`,
   },
   {
     seasonName: 'Season 6',
     episodeCount: 20,
-    winner: 'Claudia Sandoval',
+    contestantName: 'Claudia Sandoval',
     avatar: `${avatarBaseUrl}contestants/season_6/claudia_sandoval.jpg`,
   },
 ];
