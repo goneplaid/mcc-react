@@ -1,7 +1,7 @@
 import React from 'react';
-import Avatar from '../Avatar';
-import CardGrid from '../CardGrid';
-import SeasonCard from '../SeasonCard';
+import Avatar from '../components/Avatar';
+import CardGrid from '../components/CardGrid';
+import SeasonCard from '../components/SeasonCard';
 import config from '../app.config.json';
 
 const story = {

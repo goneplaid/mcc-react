@@ -1,6 +1,6 @@
 import config from '../app.config.json';
-import AvatarList from '../AvatarList';
-import Avatar from '../Avatar';
+import AvatarList from '../components/AvatarList';
+import Avatar from '../components/Avatar';
 
 const story = {
   title: 'Example/Avatar List',

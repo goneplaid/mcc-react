@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import config from './app.config.json';
+import config from '../app.config.json';
 
 const Avatar = ({ size, url, className }) => {
   const dimensions = {

@@ -1,9 +1,9 @@
 import React from 'react';
-import SeasonCard from '../SeasonCard';
-import SeasonCardHeader from '../SeasonCardHeader';
-import SeasonCardBody from '../SeasonCardBody';
-import SeasonCardFooter from '../SeasonCardFooter';
-import Avatar from '../Avatar';
+import SeasonCard from '../components/SeasonCard';
+import SeasonCardHeader from '../components/SeasonCardHeader';
+import SeasonCardBody from '../components/SeasonCardBody';
+import SeasonCardFooter from '../components/SeasonCardFooter';
+import Avatar from '../components/Avatar';
 
 const story = {
   title: 'Example/Season Card',
@@ -65,7 +65,7 @@ Clickable.args = {
   header: headerArgs,
   body: bodyArgs,
   footer: footerArgs,
-  onClick: function () { alert('howdy there, neighbor!') },
+  onClick: function () { alert("It's raw!!") },
 };
 
 const HeaderTemplate = (args) => {
