@@ -28,6 +28,7 @@ const footerArgs = {
   })
 };
 
+// Create a set of fixtures that can be shared with both Storybook and tests.
 const seasons = [
   {
     seasonName: 'Season 1',
@@ -85,5 +86,7 @@ const Template = (args) => <CardGrid {...args}>
 
 export default story;
 
-export const Main = Template.bind({});
-Main.args = {};
+export const Example = Template.bind({});
+Example.args = {
+  perRow: 4
+};
