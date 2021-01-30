@@ -251,6 +251,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Lato',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -267,6 +268,9 @@ module.exports = {
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
       mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      branded: [ // Come back to this and do a thorough assesment of our typography needs from within tailwind
+        'Michroma',
+      ],
     },
     fontSize: {
       xs: '0.75rem',

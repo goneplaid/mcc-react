@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Michroma;
+  src: url("fonts/Michroma-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
+}
+
 .text-red-branded {
   color: rgb(196, 22, 54);
 }

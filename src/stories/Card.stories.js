@@ -7,12 +7,12 @@ const story = {
 };
 
 const Template = (args) => <Card {...args}>
-  <div className="p-5">
+  <div class="p-5">
     Look at all the neat things you can put in here!
     <br />
     Some fancy text!
     <br />
-    <span className="text-4xl">🧐</span>
+    <span class="text-4xl">🧐</span>
   </div>
 </Card>;
 
