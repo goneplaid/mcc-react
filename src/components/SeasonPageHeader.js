@@ -21,8 +21,13 @@ const SeasonPageHeader = ({ avatarUrl, seasonWinner, seasonNumber }) => {
 };
 
 SeasonPageHeader.propTypes = {
+  // The URL of the avatar you would like to display
   avatarUrl: PropTypes.string,
+
+  // The name of the winner
   seasonWinner: PropTypes.string,
+
+  // Just a simple string, ie, "1"
   seasonNumber: PropTypes.string,
 };
 

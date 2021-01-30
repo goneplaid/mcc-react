@@ -15,6 +15,7 @@ const CardGrid = ({ perRow, children }) => {
 };
 
 CardGrid.propTypes = {
+  // How many items per row shall we display?
   perRow: PropTypes.number,
 };
 
