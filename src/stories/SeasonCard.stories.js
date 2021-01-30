@@ -26,7 +26,7 @@ const headerArgs = {
 };
 
 const bodyArgs = {
-  avatarUrl: 'http://localhost:7000/assets/images/judges/gordon_ramsay.png',
+  avatarUrl: 'util/images/judges/gordon_ramsay.png',
   contestantName: 'Gordon Ramsay'
 };
 
@@ -36,19 +36,19 @@ const footerArgs = {
     <Avatar
       className="mr-2"
       size="small"
-      url="http://localhost:7000/assets/images/judges/graham_elliot.png"
+      url="util/images/judges/graham_elliot.png"
     />
   ), (
     <Avatar
       className="mr-2"
       size="small"
-      url="http://localhost:7000/assets/images/judges/joe_bastianich.png"
+      url="util/images/judges/joe_bastianich.png"
     />
   ), (
     <Avatar
       className="mr-2"
       size="small"
-      url="http://localhost:7000/assets/images/judges/gordon_ramsay.png"
+      url="util/images/judges/gordon_ramsay.png"
     />
   )]
 };
