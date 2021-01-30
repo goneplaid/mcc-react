@@ -10,6 +10,8 @@ export default story;
 
 const Template = (args) => <AvatarList {...args} />;
 
+const avatarBaseUrl = 'util/images';
+
 export const Example = Template.bind({});
 Example.args = {
   heading: 'Judges',
@@ -17,19 +19,19 @@ Example.args = {
     <Avatar
       className="mr-2"
       size="small"
-      url={`${config.API_URL}/assets/images/judges/graham_elliot.png`}
+      url={`${avatarBaseUrl}/judges/graham_elliot.png`}
     />
   ), (
     <Avatar
       className="mr-2"
       size="small"
-      url={`${config.API_URL}/assets/images/judges/joe_bastianich.png`}
+      url={`${avatarBaseUrl}/judges/joe_bastianich.png`}
     />
   ), (
     <Avatar
       className="mr-2"
       size="small"
-      url={`${config.API_URL}/assets/images/judges/gordon_ramsay.png`}
+      url={`${avatarBaseUrl}/judges/gordon_ramsay.png`}
     />
   )]
 };

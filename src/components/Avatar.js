@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import config from '../app.config.json';
 
 const Avatar = ({ size, url, className }) => {
   const dimensions = {
@@ -32,7 +31,7 @@ Avatar.propTypes = {
 
 Avatar.defaultProps = {
   size: 'medium',
-  url: `${config.API_URL}/assets/images/judges/joe_bastianich.png`,
+  url: 'util/images/judges/joe_bastianich.png',
 };
 
 export default Avatar;
