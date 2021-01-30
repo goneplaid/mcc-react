@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Avatar = ({ size, url, className }) => {
   const dimensions = {
-    enormous: 'w-56 h-56',
+    enormous: 'w-32 h-32',
     large: 'w-16 h-16',
     medium: 'w-12 h-12',
     small: 'w-8 h-8',
