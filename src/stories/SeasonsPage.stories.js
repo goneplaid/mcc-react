@@ -77,6 +77,7 @@ const Template = (args) => <SeasonsPage {...args}>
         contestantName: season.contestantName
       }}
       footer={footerArgs}
+      onClick={() => alert('Howdy')}
     />;
   })}
 </SeasonsPage>;
