@@ -1,6 +1,6 @@
 const SiteHeader = ({ perRow, children }) => {
   return (
-    <header className="h-16 pl-2 shadow-md bg-white">
+    <header className="h-16 pl-2 mb-4 shadow-md bg-white">
       <div className="content flex flex-row h-full">
         <figure className="w-14 no-underline text-black flex flex-row items-center">
           <img

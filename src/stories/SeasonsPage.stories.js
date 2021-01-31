@@ -1,10 +1,10 @@
+import SeasonsPage from '../pages/Seasons';
 import Avatar from '../components/Avatar';
-import CardGrid from '../components/CardGrid';
 import SeasonCard from '../components/SeasonCard';
 
 const story = {
-  title: 'Example/Card Grid',
-  component: CardGrid,
+  title: 'Example/Page: Seasons',
+  component: SeasonsPage,
 };
 
 const avatarBaseUrl = 'util/images';
@@ -26,7 +26,6 @@ const footerArgs = {
   })
 };
 
-// Create a set of fixtures that can be shared with both Storybook and tests.
 const seasons = [
   {
     seasonName: 'Season 1',
@@ -66,7 +65,7 @@ const seasons = [
   },
 ];
 
-const Template = (args) => <CardGrid {...args}>
+const Template = (args) => <SeasonsPage {...args}>
   {seasons.map(season => {
     return <SeasonCard
       header={{
@@ -80,11 +79,9 @@ const Template = (args) => <CardGrid {...args}>
       footer={footerArgs}
     />;
   })}
-</CardGrid>;
+</SeasonsPage>;
 
 export default story;
 
 export const Example = Template.bind({});
-Example.args = {
-  perRow: 4
-};
+Example.args = {};
