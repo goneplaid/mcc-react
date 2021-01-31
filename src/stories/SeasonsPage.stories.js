@@ -7,6 +7,8 @@ const story = {
   component: SeasonsPage,
 };
 
+// @TODO: This stuff is now duplicated across this story and the card grid story.
+// Create fixtures and import stuff like this.
 const avatarBaseUrl = 'util/images';
 
 const judges = [
