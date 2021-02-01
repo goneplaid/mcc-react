@@ -8,7 +8,7 @@ const SiteHeader = ({ perRow, children }) => {
             className="inline-block w-10 h-10 mr-2"
             alt="Master Chef Compendium"
           />
-          <span class="inline-block text-xs font-black font-branded">
+          <span className="inline-block text-xs font-black font-branded">
             Masterchef<br />
             Compendium
           </span>
