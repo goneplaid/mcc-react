@@ -10,12 +10,12 @@ const SeasonsLoader = async function () {
   const rawSeasons = await axios.get('/seasons');
   const deserializer = new Deserializer();
 
-  const dataSet = {
+  const jsonData = {
     data: rawSeasons.data.data,
     included: rawSeasons.data.included,
   };
 
-  const seasons = await deserializer.deserialize(dataSet);
+  const seasons = await deserializer.deserialize(jsonData);
 
   return seasons;
 };

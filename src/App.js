@@ -10,12 +10,17 @@ import SiteHeader from './components/SiteHeader';
 import SeasonsPage from './pages/Seasons';
 
 function App() {
+  // @TODO:
+  // Figure out a way to abstract this away into some code that is more concise than this.
+  // Once we build out more of the UI and API endpoints, this is going to grow substantially.
   const [seasons, setSeasons] = useState([]);
+  const [areSeasonsLoaded, setAreSeasonsLoaded] = useState(false);
   const loadSeasons = useCallback(
     async () => {
       const seasons = await SeasonsLoader();
 
       setSeasons(seasons);
+      setAreSeasonsLoaded(true);
     }, []
   );
 
@@ -31,7 +36,7 @@ function App() {
 
           <Switch>
             <Route path="/">
-              <SeasonsPage seasons={seasons} />
+              <SeasonsPage seasons={seasons} isLoaded={areSeasonsLoaded} />
             </Route>
           </Switch>
         </div>
