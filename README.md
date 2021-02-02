@@ -1,4 +1,25 @@
-# Work in progress - intial development
+# MCC-React (Masterchef Compendium)
+
+![Screenie](readme/home-screenshot.png)
+*Prototype of the main index*
+
+# Overview
+
+Masterchef Compendium (MCC). This projects aggregates recipe data with [episode challenge result data](https://github.com/goneplaid/mcc-ui/blob/master/data/processors/index.js) that was scraped [from Wikipedia](https://en.wikipedia.org/wiki/MasterChef_(American_season_1)#Elimination_table) so that it's navigable and queryable.
+
+The data scraped from Wikipedia will be modeled with the specific recipes that each contestant has created for each challenge, along with the outcome of the challenge (how they placed).
+
+![Screenie](readme/episode-screenshot.png)
+*Season 1 episode index prototype*
+
+# But why?
+
+The idea is that this data can be mined to answer questions like what cooking technique for salmon has fared the best in all challenges where salmon was presented as a dish. Or, what percentage of Italian dishes has Joe Bastianich hated completely? How many have truly amazed him? What is Gordon Ramsay's consistently favored dish across all seasons of Masterchef? Is there one?
+
+I love cooking and have always been fascinated by cooking competition shows, especially Masterchef. I created this in an effort to prepare myself if I ever wanted to sign up as a contestant, which I will probably never, ever do. Basically, if I were to prepare for this show as a contestant, I would want to focus my efforts on practicing recipes, techniques, and ingredients that have been demonstratably successful on the show.
+
+![Screenie](readme/fooood.jpg)
+![Screenie](readme/10.jpg)
 
 # Getting Started with Create React App
 
