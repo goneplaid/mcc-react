@@ -1,6 +1,15 @@
-import config from '../app.config.json';
 import AvatarList from '../components/AvatarList';
 import Avatar from '../components/Avatar';
+import PropTypes from 'prop-types';
+
+AvatarList.propTypes = {
+  // Displays a heading, what shall it say?
+  heading: PropTypes.string.isRequired,
+};
+
+AvatarList.defaultProps = {
+  heading: 'Judges',
+};
 
 const story = {
   title: 'Example/Avatar List',

@@ -1,5 +1,14 @@
-import React from 'react';
 import Card from '../components/Card';
+import PropTypes from 'prop-types';
+
+Card.propTypes = {
+  // Optional click handler
+  onClick: PropTypes.func,
+};
+
+Card.defaultProps = {
+  onClick: undefined,
+};
 
 const story = {
   title: 'Example/Card',

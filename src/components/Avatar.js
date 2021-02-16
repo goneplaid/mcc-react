@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 const Avatar = ({ size, url, className }) => {
   const dimensions = {
     enormous: 'w-32 h-32',
@@ -20,18 +18,5 @@ const Avatar = ({ size, url, className }) => {
     </div>
   );
 }
-
-Avatar.propTypes = {
-  // What size of a button do you want?
-  size: PropTypes.oneOf(['enormous', 'large', 'medium', 'small']),
-
-  // Give us a URL to the underlying image for this avatar
-  url: PropTypes.string.isRequired,
-};
-
-Avatar.defaultProps = {
-  size: 'medium',
-  url: 'util/images/judges/joe_bastianich.png',
-};
 
 export default Avatar;

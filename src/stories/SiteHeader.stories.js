@@ -1,4 +1,3 @@
-import React from 'react';
 import SiteHeader from '../components/SiteHeader';
 
 const story = {
@@ -15,4 +14,5 @@ const Template = (args) => (
 export default story;
 
 export const Example = Template.bind({});
+
 Example.args = {};

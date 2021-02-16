@@ -1,6 +1,3 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
 const AvatarList = ({ heading, children }) => {
   return (
     <div>
@@ -13,14 +10,5 @@ const AvatarList = ({ heading, children }) => {
     </div>
   );
 }
-
-AvatarList.propTypes = {
-  // Displays a heading, what shall it say?
-  heading: PropTypes.string.isRequired,
-};
-
-AvatarList.defaultProps = {
-  heading: 'Judges',
-};
 
 export default AvatarList;

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
 const Button = ({ primary, backgroundColor, label, ...props }) => {
@@ -20,22 +19,6 @@ const Button = ({ primary, backgroundColor, label, ...props }) => {
       {label}
     </button>
   );
-};
-
-Button.propTypes = {
-  // Is this the principal call to action on the page?
-  primary: PropTypes.bool,
-
-  // Button contents
-  label: PropTypes.string.isRequired,
-
-  // Optional click handler
-  onClick: PropTypes.func,
-};
-
-Button.defaultProps = {
-  primary: false,
-  onClick: undefined,
 };
 
 export default Button;

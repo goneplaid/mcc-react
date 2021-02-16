@@ -1,4 +1,3 @@
-import React from 'react';
 import SeasonCard from '../components/SeasonCard';
 import SeasonCardHeader from '../components/SeasonCard/Header';
 import SeasonCardBody from '../components/SeasonCard/Body';

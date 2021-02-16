@@ -1,5 +1,21 @@
-import React from 'react';
 import Button from '../components/Button';
+import PropTypes from 'prop-types';
+
+Button.propTypes = {
+  // Is this the principal call to action on the page?
+  primary: PropTypes.bool,
+
+  // Button contents
+  label: PropTypes.string.isRequired,
+
+  // Optional click handler
+  onClick: PropTypes.func,
+};
+
+Button.defaultProps = {
+  primary: false,
+  onClick: undefined,
+};
 
 const story = {
   title: 'Example/Button',

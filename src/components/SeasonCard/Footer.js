@@ -1,4 +1,3 @@
-import React from 'react';
 import AvatarList from '../AvatarList';
 
 const Footer = ({ heading, children }) => {

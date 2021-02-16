@@ -1,6 +1,16 @@
 import Avatar from '../components/Avatar';
 import CardGrid from '../components/CardGrid';
 import SeasonCard from '../components/SeasonCard';
+import PropTypes from 'prop-types';
+
+CardGrid.propTypes = {
+  // How many items per row shall we display?
+  perRow: PropTypes.number,
+};
+
+CardGrid.defaultProps = {
+  perRow: 3,
+};
 
 const story = {
   title: 'Example/Card Grid',

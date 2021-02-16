@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Header = ({ seasonName, episodeCount }) => {
   return (
     <section className="p-4 border-b border-grey-light flex flex-row">

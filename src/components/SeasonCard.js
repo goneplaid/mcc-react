@@ -1,4 +1,3 @@
-import React from 'react';
 import Card from './Card';
 import SeasonCardHeader from './SeasonCard/Header';
 import SeasonCardBody from './SeasonCard/Body';
@@ -32,7 +31,7 @@ const SeasonCard = ({ header, body, footer, onClick }) => {
   return (
     <Card {... (onClick && { onClick })}>
       {children}
-    </Card >
+    </Card>
   );
 };
 

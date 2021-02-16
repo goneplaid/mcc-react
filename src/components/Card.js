@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
 const Card = ({ onClick, children }) => {
@@ -14,15 +13,6 @@ const Card = ({ onClick, children }) => {
       {children}
     </div>
   );
-};
-
-Card.propTypes = {
-  // Optional click handler
-  onClick: PropTypes.func,
-};
-
-Card.defaultProps = {
-  onClick: undefined,
 };
 
 export default Card;
